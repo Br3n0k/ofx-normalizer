@@ -80,12 +80,12 @@ def _fix_stmttrn_block(block_lines):
 
 def main():
     if len(sys.argv) != 2:
-        print('É necessário fornecer o arquivo OFX a ser corrigido.\nExemplo: python quebra.py caminho/arquivo.ofx')
+        print('You must provide the OFX file to normalize.\nExample: python ofx_normalizer.py path/to/file.ofx')
         return
 
     in_path = sys.argv[1]
     if not os.path.isfile(in_path):
-        print('Arquivo não encontrado:', in_path)
+        print('File not found:', in_path)
         return
 
     text, src_enc = _read_text_with_fallback(in_path)
@@ -162,7 +162,7 @@ def main():
     with open(out_path, 'w', encoding='cp1252', newline='\r\n', errors='replace') as f:
         f.write(out_text)
 
-    print('Arquivo corrigido gerado em:', out_path)
+    print('Normalized OFX file written to:', out_path)
 
 
 if __name__ == '__main__':

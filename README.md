@@ -68,7 +68,7 @@ Contributions are welcome! Please:
 
 ## Roadmap
 - CLI options (e.g., custom `MAX_NAME_LEN`, toggles for specific normalizations).
-- Heuristics per bank (Sicoob/Nubank/Itaú) to handle known quirks.
+- Heuristics per bank (Sicoob/Nubank/Itaú/Inter/C6 and others) to handle known quirks.
 - Optional `<MEMO>` length constraints with splitting/truncation policies.
 - Lightweight test suite and sample OFX fixtures.
 
@@ -78,3 +78,8 @@ MIT License (to be confirmed by the maintainer).
 ## Acknowledgements
 - Thanks to the open-source community and users maintaining legacy finance workflows.
 - Special thanks to Br3n0k for initiating and maintaining this project.
+
+## Development
+- The script is developed by [Br3n0k](https://github.com/Br3n0k).
+- Source code is available on [GitHub](https://github.com/Br3n0k/ofx-normalizer).
+- Contributions are welcome! Please follow the [Contributing](#contributing) guidelines.
