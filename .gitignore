@@ -32,3 +32,4 @@ coverage.xml
 *.cover
 .hypothesis/
 *.ofx
+*.zip
